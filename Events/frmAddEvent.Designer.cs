@@ -54,6 +54,8 @@
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.Archivo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnAddPhoto = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
@@ -68,6 +70,7 @@
             this.lblNamePage.Size = new System.Drawing.Size(205, 35);
             this.lblNamePage.TabIndex = 0;
             this.lblNamePage.Text = "Nuevo Evento";
+            this.lblNamePage.Click += new System.EventHandler(this.LblNamePage_Click);
             // 
             // label1
             // 
@@ -163,9 +166,9 @@
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(380, 214);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(131, 21);
+            this.label6.Size = new System.Drawing.Size(154, 21);
             this.label6.TabIndex = 11;
-            this.label6.Text = "Fecha de Inicio";
+            this.label6.Text = "Fecha de Termino";
             // 
             // dtEnd
             // 
@@ -315,11 +318,37 @@
             this.btnAddPhoto.Text = "Agregar";
             this.btnAddPhoto.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.button1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(591, 648);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(96, 36);
+            this.button1.TabIndex = 23;
+            this.button1.Text = "Guardar";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Red;
+            this.button2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(457, 648);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(96, 36);
+            this.button2.TabIndex = 24;
+            this.button2.Text = "Cancelar";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
             // frmAddEvent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(702, 704);
+            this.ClientSize = new System.Drawing.Size(702, 695);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnAddPhoto);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
@@ -381,5 +410,7 @@
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Archivo;
         private System.Windows.Forms.Button btnAddPhoto;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

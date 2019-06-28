@@ -53,6 +53,54 @@
     <Compile Include="Events\frmAddEvent.Designer.cs">
       <DependentUpon>frmAddEvent.cs</DependentUpon>
     </Compile>
+    <Compile Include="Events\frmListEvents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Events\frmListEvents.Designer.cs">
+      <DependentUpon>frmListEvents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Events\frmViewEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Events\frmViewEvent.Designer.cs">
+      <DependentUpon>frmViewEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configurations\frmListEventTypes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configurations\frmListEventTypes.Designer.cs">
+      <DependentUpon>frmListEventTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configurations\frmListUserTypes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configurations\frmListUserTypes.Designer.cs">
+      <DependentUpon>frmListUserTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\frmRestorePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\frmRestorePassword.Designer.cs">
+      <DependentUpon>frmRestorePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\frmAddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\frmAddUser.Designer.cs">
+      <DependentUpon>frmAddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\frmViewUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\frmViewUser.Designer.cs">
+      <DependentUpon>frmViewUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\frmListUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\frmListUser.Designer.cs">
+      <DependentUpon>frmListUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +111,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Events\frmAddEvent.resx">
       <DependentUpon>frmAddEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Events\frmViewEvent.resx">
+      <DependentUpon>frmViewEvent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
@@ -76,6 +127,18 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Users\frmAddUser.resx">
+      <DependentUpon>frmAddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\frmListUser.resx">
+      <DependentUpon>frmListUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\frmRestorePassword.resx">
+      <DependentUpon>frmRestorePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\frmViewUser.resx">
+      <DependentUpon>frmViewUser.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

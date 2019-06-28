@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace eventsRegisterInterface
 {
-    public partial class frmAddEvent : Form
+    public partial class frmViewUser : Form
     {
-        public frmAddEvent()
+        public frmViewUser()
         {
             InitializeComponent();
-        }
-
-        private void LblNamePage_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
