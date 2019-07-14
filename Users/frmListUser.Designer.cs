@@ -28,76 +28,77 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.code = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.type = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.components = new System.ComponentModel.Container();
+            this.dtgridUsers = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblNamePage = new System.Windows.Forms.Label();
+            this.userBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgridUsers)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dtgridUsers
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.name,
-            this.email,
-            this.code,
-            this.type});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 50);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 45;
-            this.dataGridView1.Size = new System.Drawing.Size(490, 305);
-            this.dataGridView1.TabIndex = 0;
+            this.dtgridUsers.AllowUserToAddRows = false;
+            this.dtgridUsers.AllowUserToDeleteRows = false;
+            this.dtgridUsers.AllowUserToResizeColumns = false;
+            this.dtgridUsers.AllowUserToResizeRows = false;
+            this.dtgridUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgridUsers.Location = new System.Drawing.Point(12, 112);
+            this.dtgridUsers.MultiSelect = false;
+            this.dtgridUsers.Name = "dtgridUsers";
+            this.dtgridUsers.ReadOnly = true;
+            this.dtgridUsers.RowHeadersWidth = 45;
+            this.dtgridUsers.Size = new System.Drawing.Size(487, 305);
+            this.dtgridUsers.TabIndex = 0;
             // 
-            // name
+            // label1
             // 
-            this.name.HeaderText = "Nombre";
-            this.name.MinimumWidth = 6;
-            this.name.Name = "name";
-            this.name.Width = 110;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label1.Location = new System.Drawing.Point(12, 94);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(487, 2);
+            this.label1.TabIndex = 28;
             // 
-            // email
+            // lblNamePage
             // 
-            this.email.HeaderText = "Correo";
-            this.email.MinimumWidth = 6;
-            this.email.Name = "email";
-            this.email.Width = 110;
+            this.lblNamePage.AutoSize = true;
+            this.lblNamePage.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNamePage.ForeColor = System.Drawing.Color.DimGray;
+            this.lblNamePage.Location = new System.Drawing.Point(6, 43);
+            this.lblNamePage.Name = "lblNamePage";
+            this.lblNamePage.Size = new System.Drawing.Size(251, 31);
+            this.lblNamePage.TabIndex = 27;
+            this.lblNamePage.Text = "Listado de usuarios";
             // 
-            // code
+            // userBindingSource
             // 
-            this.code.HeaderText = "Código";
-            this.code.MinimumWidth = 6;
-            this.code.Name = "code";
-            this.code.Width = 110;
-            // 
-            // type
-            // 
-            this.type.HeaderText = "Tipo usuario";
-            this.type.MinimumWidth = 6;
-            this.type.Name = "type";
-            this.type.Width = 110;
+            this.userBindingSource.DataSource = typeof(eventsRegisterInterface.User);
             // 
             // frmListUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(516, 367);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(512, 429);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblNamePage);
+            this.Controls.Add(this.dtgridUsers);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "frmListUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Listado de Usuarios";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Text = " ";
+            ((System.ComponentModel.ISupportInitialize)(this.dtgridUsers)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn email;
-        private System.Windows.Forms.DataGridViewTextBoxColumn code;
-        private System.Windows.Forms.DataGridViewTextBoxColumn type;
+        private System.Windows.Forms.DataGridView dtgridUsers;
+        private System.Windows.Forms.BindingSource userBindingSource;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblNamePage;
     }
 }

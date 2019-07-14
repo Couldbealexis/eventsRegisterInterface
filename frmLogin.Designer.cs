@@ -33,9 +33,9 @@
             this.STC_Universidad = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.CON_Contenedor = new System.Windows.Forms.Panel();
-            this.EDT_Codigo = new System.Windows.Forms.TextBox();
+            this.txtCode = new System.Windows.Forms.TextBox();
             this.BTN_IniciarSesion = new System.Windows.Forms.Button();
-            this.EDT_Clave = new System.Windows.Forms.TextBox();
+            this.txtPass = new System.Windows.Forms.TextBox();
             this.STC_Clave = new System.Windows.Forms.Label();
             this.STC_Codigo = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -49,7 +49,7 @@
             this.STC_Udeg.ForeColor = System.Drawing.Color.Navy;
             this.STC_Udeg.Location = new System.Drawing.Point(162, 48);
             this.STC_Udeg.Name = "STC_Udeg";
-            this.STC_Udeg.Size = new System.Drawing.Size(201, 21);
+            this.STC_Udeg.Size = new System.Drawing.Size(177, 18);
             this.STC_Udeg.TabIndex = 10;
             this.STC_Udeg.Text = "Universidad de Guadalajara";
             // 
@@ -60,7 +60,7 @@
             this.STC_Universidad.ForeColor = System.Drawing.Color.Navy;
             this.STC_Universidad.Location = new System.Drawing.Point(189, 17);
             this.STC_Universidad.Name = "STC_Universidad";
-            this.STC_Universidad.Size = new System.Drawing.Size(139, 21);
+            this.STC_Universidad.Size = new System.Drawing.Size(123, 18);
             this.STC_Universidad.TabIndex = 9;
             this.STC_Universidad.Text = "Escuela Vocacional";
             // 
@@ -76,9 +76,9 @@
             // CON_Contenedor
             // 
             this.CON_Contenedor.Controls.Add(this.pictureBox1);
-            this.CON_Contenedor.Controls.Add(this.EDT_Codigo);
+            this.CON_Contenedor.Controls.Add(this.txtCode);
             this.CON_Contenedor.Controls.Add(this.BTN_IniciarSesion);
-            this.CON_Contenedor.Controls.Add(this.EDT_Clave);
+            this.CON_Contenedor.Controls.Add(this.txtPass);
             this.CON_Contenedor.Controls.Add(this.STC_Clave);
             this.CON_Contenedor.Controls.Add(this.STC_Codigo);
             this.CON_Contenedor.Location = new System.Drawing.Point(72, 81);
@@ -86,13 +86,13 @@
             this.CON_Contenedor.Size = new System.Drawing.Size(357, 352);
             this.CON_Contenedor.TabIndex = 11;
             // 
-            // EDT_Codigo
+            // txtCode
             // 
-            this.EDT_Codigo.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EDT_Codigo.Location = new System.Drawing.Point(79, 192);
-            this.EDT_Codigo.Name = "EDT_Codigo";
-            this.EDT_Codigo.Size = new System.Drawing.Size(200, 29);
-            this.EDT_Codigo.TabIndex = 7;
+            this.txtCode.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCode.Location = new System.Drawing.Point(79, 192);
+            this.txtCode.Name = "txtCode";
+            this.txtCode.Size = new System.Drawing.Size(200, 27);
+            this.txtCode.TabIndex = 7;
             // 
             // BTN_IniciarSesion
             // 
@@ -104,15 +104,16 @@
             this.BTN_IniciarSesion.TabIndex = 10;
             this.BTN_IniciarSesion.Text = "Iniciar Sesión";
             this.BTN_IniciarSesion.UseVisualStyleBackColor = true;
+            this.BTN_IniciarSesion.Click += new System.EventHandler(this.BTN_IniciarSesion_Click);
             // 
-            // EDT_Clave
+            // txtPass
             // 
-            this.EDT_Clave.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EDT_Clave.Location = new System.Drawing.Point(79, 251);
-            this.EDT_Clave.Name = "EDT_Clave";
-            this.EDT_Clave.Size = new System.Drawing.Size(200, 29);
-            this.EDT_Clave.TabIndex = 9;
-            this.EDT_Clave.UseSystemPasswordChar = true;
+            this.txtPass.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPass.Location = new System.Drawing.Point(79, 251);
+            this.txtPass.Name = "txtPass";
+            this.txtPass.Size = new System.Drawing.Size(200, 27);
+            this.txtPass.TabIndex = 9;
+            this.txtPass.UseSystemPasswordChar = true;
             // 
             // STC_Clave
             // 
@@ -121,7 +122,7 @@
             this.STC_Clave.ForeColor = System.Drawing.Color.Navy;
             this.STC_Clave.Location = new System.Drawing.Point(78, 229);
             this.STC_Clave.Name = "STC_Clave";
-            this.STC_Clave.Size = new System.Drawing.Size(94, 22);
+            this.STC_Clave.Size = new System.Drawing.Size(83, 19);
             this.STC_Clave.TabIndex = 8;
             this.STC_Clave.Text = "Contraseña";
             // 
@@ -132,7 +133,7 @@
             this.STC_Codigo.ForeColor = System.Drawing.Color.Navy;
             this.STC_Codigo.Location = new System.Drawing.Point(78, 170);
             this.STC_Codigo.Name = "STC_Codigo";
-            this.STC_Codigo.Size = new System.Drawing.Size(61, 22);
+            this.STC_Codigo.Size = new System.Drawing.Size(54, 19);
             this.STC_Codigo.TabIndex = 6;
             this.STC_Codigo.Text = "Codigo";
             // 
@@ -161,9 +162,9 @@
         private System.Windows.Forms.Label STC_Universidad;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel CON_Contenedor;
-        private System.Windows.Forms.TextBox EDT_Codigo;
+        private System.Windows.Forms.TextBox txtCode;
         private System.Windows.Forms.Button BTN_IniciarSesion;
-        private System.Windows.Forms.TextBox EDT_Clave;
+        private System.Windows.Forms.TextBox txtPass;
         private System.Windows.Forms.Label STC_Clave;
         private System.Windows.Forms.Label STC_Codigo;
     }

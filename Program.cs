@@ -17,8 +17,8 @@ namespace eventsRegisterInterface
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            //frmLogin login = new frmLogin();
-            frmAddEvent login = new frmAddEvent();
+            frmLogin login = new frmLogin();
+            //frmListUser login = new frmListUser();
             login.ShowDialog();
 
             //Application.Run(new frmLogin());
